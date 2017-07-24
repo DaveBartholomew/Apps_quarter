@@ -20,7 +20,8 @@ Experimental data visualisation example uses published apprenticeship starts dat
   <meta charset="utf-8">
   <script src="d3.js"></script>
   <script src="dimple.js"></script>
-  
+
+ 
       <style>
       circle.dimple-series-1 {
             fill: red;
@@ -59,6 +60,8 @@ Experimental data visualisation example uses published apprenticeship starts dat
           var y1 = myChart.addMeasureAxis("y", "All levels");
           myChart.addSeries("null", dimple.plot.line, [x,y1]);
           myChart.addSeries("null", dimple.plot.scatter, [x,y1]);
+       
+          d3.select("x").style("font-size", "40px");
  
         //  var y2 = myChart.addMeasureAxis("y", "Intermediate");
         //  myChart.addSeries("null", dimple.plot.line, [x,y2]);
