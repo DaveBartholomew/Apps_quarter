@@ -26,7 +26,7 @@ Experimental data visualisation example uses published apprenticeship starts dat
             fill: red;
       }
       h2 {
-          text-align: center;
+          text-align: left;
       }
       </style>
 
@@ -40,9 +40,8 @@ Experimental data visualisation example uses published apprenticeship starts dat
 
           d3.select("body")
                   .append('h2')
-                  .text("Apprenticeship Starts by Quarter, 2010/11 to 2015/16 (using Dimple.js)")
-                  .append('h4')
-                  .text("Needs more work!!");
+                  .text("Apprenticeship Starts by Quarter, 2010/11 to 2015/16")
+                  .style("font-family","Arial");
         
           var svg = d3.select("body")
             .append("svg")
