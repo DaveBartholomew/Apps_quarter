@@ -23,7 +23,7 @@ Experimental data visualisation example uses published apprenticeship starts dat
  
       <style>
       circle.dimple-series-1 {
-            fill: red;
+            fill: blue;
       }
       h2 {
           text-align: left;
@@ -57,7 +57,9 @@ Experimental data visualisation example uses published apprenticeship starts dat
           var x = myChart.addCategoryAxis("x", "Quarter"); 
           var y1 = myChart.addMeasureAxis("y", "All levels");
           myChart.addSeries("null", dimple.plot.line, [x,y1]);
-          myChart.addSeries("null", dimple.plot.scatter, [x,y1]);
+          var lines = myChart.addSeries(null, dimple.plot.line);
+          lines.lineMarkers = true;
+
        
           x.fontSize = "20";
           y1.fontSize = "20";
