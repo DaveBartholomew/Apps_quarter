@@ -58,7 +58,8 @@
 	      /* Dimple.js Chart construction code */
 
           var myChart = new dimple.chart(svg, data);
-         
+
+	      
           var x = myChart.addCategoryAxis("x", "Quarter"); 
           var y1 = myChart.addMeasureAxis("y", "All levels");
           myChart.addSeries("null", dimple.plot.line, [x,y1]);
@@ -102,6 +103,10 @@
   <script type="text/javascript">
   /* Use D3 (not dimple.js) to load the CSV file and pass the contents of it to the draw function */
   d3.csv("Apps_starts_by_quarter.csv", draw);
+	  
+	  <div>
+		  <p style="font-family: Arial; font-size: 16px"> <strong> Department for Education <strong/> </p>
+	  </div>
   </script>
 </body>
 
