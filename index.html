@@ -44,7 +44,7 @@
 
           d3.select("body")
                   .append('h2')
-                  .text("Apprenticeship Starts by Quarter, 2011/12 to 2015/16")
+                 .text("Apprenticeship Starts by Quarter, 2011/12 to 2015/16")
                   .style("font-family","Arial");
         
           var svg = d3.select("body")
@@ -84,15 +84,17 @@
        
           myChart.draw();
         };
+	    
+	<div> 
+         <p style="font-family: Arial; font-size: 16px"> <strong> Department for Education <strong/> </p> 
+        </div>
+        <div> 
+         <a href=" https://www.gov.uk/government/collections/further-education-and-skills-statistical-first-release-sfr"> Data source: Further Education and Skills Statistical First Release.</a> 
+        </div>
+
       </script>
   </head>
-     <div> 
-       <p style="font-family: Arial; font-size: 16px"> <strong> Department for Education <strong/> </p> 
-     </div>
-     <div> 
-      <a href=" https://www.gov.uk/government/collections/further-education-and-skills-statistical-first-release-sfr"> Data source: Further Education and Skills Statistical First Release.</a> 
-     </div>
-
+     
 <body>
   <script type="text/javascript">
   /* Use D3 (not dimple.js) to load the CSV file and pass the contents of it to the draw function */
